@@ -26,21 +26,673 @@ public class RPS_Form extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jTextField1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jButton38 = new javax.swing.JButton();
+        jButton39 = new javax.swing.JButton();
+        jButton40 = new javax.swing.JButton();
+        jButton41 = new javax.swing.JButton();
+        jButton42 = new javax.swing.JButton();
+        jButton43 = new javax.swing.JButton();
+        jButton44 = new javax.swing.JButton();
+        jButton45 = new javax.swing.JButton();
+        jButton46 = new javax.swing.JButton();
+        jButton47 = new javax.swing.JButton();
+        jButton48 = new javax.swing.JButton();
+        jButton49 = new javax.swing.JButton();
+        jButton50 = new javax.swing.JButton();
+        jButton51 = new javax.swing.JButton();
+        jButton52 = new javax.swing.JButton();
+        jButton53 = new javax.swing.JButton();
+        jButton54 = new javax.swing.JButton();
+        jButton55 = new javax.swing.JButton();
+        jButton56 = new javax.swing.JButton();
+        jButton57 = new javax.swing.JButton();
+        jButton58 = new javax.swing.JButton();
+        jButton59 = new javax.swing.JButton();
+        jButton60 = new javax.swing.JButton();
+        jButton61 = new javax.swing.JButton();
+        jButton62 = new javax.swing.JButton();
+        jButton63 = new javax.swing.JButton();
+        jButton64 = new javax.swing.JButton();
+        jButton65 = new javax.swing.JButton();
+        jButton66 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton67 = new javax.swing.JButton();
+        jButton68 = new javax.swing.JButton();
+        jButton69 = new javax.swing.JButton();
+        jButton70 = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField1.setBackground(java.awt.SystemColor.control);
+        jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        jTextField1.setText("0");
+        jTextField1.setBorder(null);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 330, 60));
+        jTextField1.getAccessibleContext().setAccessibleName("0");
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setText("Scientific");
+        jLabel1.setName("CALCULATOR"); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
+
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton7.setText("+");
+        jButton7.setActionCommand("");
+        jButton7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 520, 60, 50));
+
+        jButton38.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton38.setText("÷");
+        jButton38.setActionCommand("");
+        jButton38.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 60, 50));
+
+        jButton39.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton39.setText("⌫");
+        jButton39.setActionCommand("");
+        jButton39.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 60, 50));
+
+        jButton40.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton40.setText("mod");
+        jButton40.setActionCommand("");
+        jButton40.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 60, 50));
+
+        jButton41.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton41.setText("x");
+        jButton41.setActionCommand("");
+        jButton41.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 60, 50));
+
+        jButton42.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton42.setText("-");
+        jButton42.setActionCommand("");
+        jButton42.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, 60, 50));
+
+        jButton43.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton43.setText("1");
+        jButton43.setActionCommand("");
+        jButton43.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 520, 60, 50));
+
+        jButton44.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton44.setText("n!");
+        jButton44.setActionCommand("");
+        jButton44.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, 60, 50));
+
+        jButton45.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton45.setText("C");
+        jButton45.setActionCommand("");
+        jButton45.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 60, 50));
+
+        jButton46.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton46.setText("exp");
+        jButton46.setActionCommand("");
+        jButton46.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 60, 50));
+
+        jButton47.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton47.setText("9");
+        jButton47.setActionCommand("");
+        jButton47.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, 60, 50));
+
+        jButton48.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton48.setText("4");
+        jButton48.setActionCommand("");
+        jButton48.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton48, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 460, 60, 50));
+
+        jButton49.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton49.setText("2");
+        jButton49.setActionCommand("");
+        jButton49.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton49, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 520, 60, 50));
+
+        jButton50.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton50.setText(")");
+        jButton50.setActionCommand("");
+        jButton50.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 60, 50));
+
+        jButton51.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton51.setText("e");
+        jButton51.setActionCommand("");
+        jButton51.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton51, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 60, 50));
+
+        jButton52.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton52.setText("|x|");
+        jButton52.setActionCommand("");
+        jButton52.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton52ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton52, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 60, 50));
+
+        jButton53.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton53.setText("8");
+        jButton53.setActionCommand("");
+        jButton53.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton53ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton53, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, 60, 50));
+
+        jButton54.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton54.setText("5");
+        jButton54.setActionCommand("");
+        jButton54.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton54, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, 60, 50));
+
+        jButton55.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton55.setText("3");
+        jButton55.setActionCommand("");
+        jButton55.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton55, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 520, 60, 50));
+
+        jButton56.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton56.setText("(");
+        jButton56.setActionCommand("");
+        jButton56.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton56, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, 60, 50));
+
+        jButton57.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton57.setText("π");
+        jButton57.setActionCommand("");
+        jButton57.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton57ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton57, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 60, 50));
+
+        jButton58.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton58.setText("1/x");
+        jButton58.setActionCommand("");
+        jButton58.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton58ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton58, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 60, 50));
+
+        jButton59.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton59.setText("7");
+        jButton59.setActionCommand("");
+        jButton59.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton59ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton59, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, 60, 50));
+
+        jButton60.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton60.setText("6");
+        jButton60.setActionCommand("");
+        jButton60.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton60ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton60, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 460, 60, 50));
+
+        jButton61.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton61.setText("log");
+        jButton61.setActionCommand("");
+        jButton61.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton61ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton61, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, 60, 50));
+
+        jButton62.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton62.setText("2√x");
+        jButton62.setActionCommand("");
+        jButton62.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton62ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton62, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 60, 50));
+
+        jButton63.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton63.setText("2nd");
+        jButton63.setActionCommand("");
+        jButton63.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton63ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton63, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 60, 50));
+
+        jButton64.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton64.setText("x²");
+        jButton64.setActionCommand("");
+        jButton64.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton64ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton64, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 60, 50));
+
+        jButton65.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton65.setText("x^y");
+        jButton65.setActionCommand("");
+        jButton65.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton65ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton65, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 60, 50));
+
+        jButton66.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton66.setText("10^x");
+        jButton66.setActionCommand("");
+        jButton66.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton66ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton66, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 60, 50));
+
+        jButton8.setBackground(new java.awt.Color(0, 102, 255));
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("=");
+        jButton8.setActionCommand("");
+        jButton8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 580, 60, 50));
+
+        jButton67.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton67.setText(".");
+        jButton67.setActionCommand("");
+        jButton67.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton67ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton67, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 580, 60, 50));
+
+        jButton68.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton68.setText("0");
+        jButton68.setActionCommand("");
+        jButton68.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton68ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton68, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 580, 60, 50));
+
+        jButton69.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton69.setText("+/-");
+        jButton69.setActionCommand("");
+        jButton69.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton69ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton69, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 580, 60, 50));
+
+        jButton70.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton70.setText("In");
+        jButton70.setActionCommand("");
+        jButton70.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jButton70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton70ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton70, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 580, 60, 50));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ƒ Function", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 90, 30));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "⊿ Trigonometry", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 120, 30));
+
+        jButton1.setBackground(java.awt.SystemColor.control);
+        jButton1.setText("MS");
+        jButton1.setBorder(null);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 60, 20));
+
+        jButton2.setBackground(java.awt.SystemColor.control);
+        jButton2.setText("DEG");
+        jButton2.setBorder(null);
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 60, 20));
+
+        jButton3.setBackground(java.awt.SystemColor.control);
+        jButton3.setText("MC");
+        jButton3.setBorder(null);
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 60, 20));
+
+        jButton4.setBackground(java.awt.SystemColor.control);
+        jButton4.setText("F-E");
+        jButton4.setBorder(null);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 60, 20));
+
+        jButton5.setBackground(java.awt.SystemColor.control);
+        jButton5.setText("MR");
+        jButton5.setBorder(null);
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 60, 20));
+
+        jButton6.setBackground(java.awt.SystemColor.control);
+        jButton6.setText("M+");
+        jButton6.setBorder(null);
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 60, 20));
+
+        jButton9.setBackground(java.awt.SystemColor.control);
+        jButton9.setText("M-");
+        jButton9.setBorder(null);
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 60, 20));
+
+        jButton10.setBackground(java.awt.SystemColor.control);
+        jButton10.setText("☰");
+        jButton10.setBorder(null);
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 40, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton51ActionPerformed
+
+    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton52ActionPerformed
+
+    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton53ActionPerformed
+
+    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton54ActionPerformed
+
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton56ActionPerformed
+
+    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton57ActionPerformed
+
+    private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton58ActionPerformed
+
+    private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton59ActionPerformed
+
+    private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton60ActionPerformed
+
+    private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton61ActionPerformed
+
+    private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton62ActionPerformed
+
+    private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton63ActionPerformed
+
+    private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton64ActionPerformed
+
+    private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton65ActionPerformed
+
+    private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton66ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton67ActionPerformed
+
+    private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton68ActionPerformed
+
+    private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton69ActionPerformed
+
+    private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton70ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +730,52 @@ public class RPS_Form extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton38;
+    private javax.swing.JButton jButton39;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton40;
+    private javax.swing.JButton jButton41;
+    private javax.swing.JButton jButton42;
+    private javax.swing.JButton jButton43;
+    private javax.swing.JButton jButton44;
+    private javax.swing.JButton jButton45;
+    private javax.swing.JButton jButton46;
+    private javax.swing.JButton jButton47;
+    private javax.swing.JButton jButton48;
+    private javax.swing.JButton jButton49;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton50;
+    private javax.swing.JButton jButton51;
+    private javax.swing.JButton jButton52;
+    private javax.swing.JButton jButton53;
+    private javax.swing.JButton jButton54;
+    private javax.swing.JButton jButton55;
+    private javax.swing.JButton jButton56;
+    private javax.swing.JButton jButton57;
+    private javax.swing.JButton jButton58;
+    private javax.swing.JButton jButton59;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton60;
+    private javax.swing.JButton jButton61;
+    private javax.swing.JButton jButton62;
+    private javax.swing.JButton jButton63;
+    private javax.swing.JButton jButton64;
+    private javax.swing.JButton jButton65;
+    private javax.swing.JButton jButton66;
+    private javax.swing.JButton jButton67;
+    private javax.swing.JButton jButton68;
+    private javax.swing.JButton jButton69;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton70;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
