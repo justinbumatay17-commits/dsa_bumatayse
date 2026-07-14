@@ -24,7 +24,23 @@ public class Delacruz_program {
         int y = input.nextInt();
         
         int sum;
+        int sub;
+        int prod;
+        int div;
+        
+   
         sum = x + y;
         System.out.println("Sum is:" + sum );
+        sub = x - y;
+        System.out.println("Sub is:" + sub );
+        prod = x * y;
+        System.out.println("Product is:" + prod );
+        div = x / y;
+        System.out.println("Quotient is:" + div );
+        
+        
+        
+        
+        
     }
 }
