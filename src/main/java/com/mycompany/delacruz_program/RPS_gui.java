@@ -11,7 +11,8 @@ import java.util.Scanner;
  * @author CL2-PC
  */
 public class RPS_gui extends javax.swing.JFrame {
-
+    private int player1Lives = 5;
+    private int player2Lives = 5;
     /**
      * Creates new form RPS_gui
      */
@@ -29,11 +30,17 @@ public class RPS_gui extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        lblPlayer2 = new javax.swing.JLabel();
+        lblPlayer1 = new javax.swing.JLabel();
+        cmbPlayer1 = new javax.swing.JComboBox<>();
+        cmbPlayer2 = new javax.swing.JComboBox<>();
+        lblTitle = new javax.swing.JLabel();
+        lblLives1 = new javax.swing.JLabel();
+        lblLives2 = new javax.swing.JLabel();
+        btnPlay = new javax.swing.JButton();
+        lblResult = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        p2 = new javax.swing.JPasswordField();
-        p1 = new javax.swing.JPasswordField();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -41,72 +48,144 @@ public class RPS_gui extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 153, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("GO");
+        lblPlayer2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblPlayer2.setText("PLAYER 2");
+        jPanel1.add(lblPlayer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 90, 20));
+
+        lblPlayer1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblPlayer1.setText("PLAYER 1");
+        jPanel1.add(lblPlayer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 80, 20));
+
+        cmbPlayer1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Rock", "Paper", "Scissors" }));
+        jPanel1.add(cmbPlayer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, -1, -1));
+
+        cmbPlayer2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Rock", "Paper", "Scissors" }));
+        jPanel1.add(cmbPlayer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, -1, -1));
+
+        lblTitle.setBackground(new java.awt.Color(255, 51, 0));
+        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblTitle.setText("ROCK PAPER SCISSORS GAME!!!");
+        jPanel1.add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+
+        lblLives1.setText("Lives : 5");
+        jPanel1.add(lblLives1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
+
+        lblLives2.setText("Lives : 5");
+        jPanel1.add(lblLives2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, -1, -1));
+
+        btnPlay.setText("PLAY ROUND");
+        btnPlay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPlayActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnPlay, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 140, 40));
+
+        lblResult.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblResult.setText("Choose your moves!");
+        jPanel1.add(lblResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, -1, -1));
+
+        jButton1.setText("NEW GAME");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, 150, 70));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, 30));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel1.setText("PLAYER 2");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 90, 20));
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("PLAYER 1");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 80, 20));
-        jPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 130, 90, 50));
-        jPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 90, 50));
+        jButton2.setText("EXIT");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 80, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 550, 320));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlayActionPerformed
+
+    String player1Choice = (String) cmbPlayer1.getSelectedItem();
+    String player2Choice = (String) cmbPlayer2.getSelectedItem();
+
+    if (player1Choice.equals("Select") || player2Choice.equals("Select")) {
+        lblResult.setText("Please select a choice for both players!");
+        return;
+    }
+
+    if (player1Choice.equals(player2Choice)) {
+
+        lblResult.setText("TIE! Nobody loses a life.");
+    }
+
+    else if (player1Choice.equals("Rock")
+            && player2Choice.equals("Scissors")) {
+
+        player2Lives--;
+
+        lblResult.setText("PLAYER 1 WINS!");
+    }
+
+    else if (player1Choice.equals("Paper")
+            && player2Choice.equals("Rock")) {
+
+        player2Lives--;
+
+        lblResult.setText("PLAYER 1 WINS!");
+    }
+
+    else if (player1Choice.equals("Scissors")
+            && player2Choice.equals("Paper")) {
+
+        player2Lives--;
+
+        lblResult.setText("PLAYER 1 WINS!");
+    }
+
+    else {
+
+        player1Lives--;
+
+        lblResult.setText("PLAYER 2 WINS!");
+    }
+
+    lblLives1.setText("Lives: " + player1Lives);
+    lblLives2.setText("Lives: " + player2Lives);
+
+    if (player1Lives <= 0) {
+
+        lblResult.setText("GAME OVER! PLAYER 2 WINS!");
+        btnPlay.setEnabled(false);
+
+    } else if (player2Lives <= 0) {
+
+        lblResult.setText("GAME OVER! PLAYER 1 WINS!");
+        btnPlay.setEnabled(false);
+    }
+
+    }//GEN-LAST:event_btnPlayActionPerformed
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-Scanner input = new Scanner (System.in);
-     
-     int p1 = input.nextInt();
-     int p2 = input.nextInt();
-     
-     if (p1==1 && p2==1)
-     {
-         System.out.println("Draw");
-     }
-     else if (p1==1 && p2==2)
-     {
-         System.out.println("Player 2 Wins");
-     }
-     else if (p1==1 && p2==3)
-     {
-         System.out.println("Player 1 Wins");
-     }
-     else if (p1==2 && p2==1)
-     {
-         System.out.println("Player 1 Wins");
-     }
-     else if (p1==2 && p2==2)
-     {
-         System.out.println("Draw");
-     }
-     else if (p1==2 && p2==3)
-     {
-         System.out.println("Player 2 Wins");
-     }
-     else if (p1==3 && p2==1)
-     {
-         System.out.println("Player 1 Wins");
-     }
-     else if (p1==3 && p2==2)
-     {
-         System.out.println("Player 1 Wins");
-     }
-     else if (p1==3 && p2==3)
-     {
-         System.out.println("Draw");
-     }        // TODO add your handling code here:
+    player1Lives = 5;
+player2Lives = 5;
+
+lblLives1.setText("Lives: 5");
+lblLives2.setText("Lives: 5");
+
+cmbPlayer1.setSelectedIndex(0);
+cmbPlayer2.setSelectedIndex(0);
+
+lblResult.setText("Choose your moves!");
+
+btnPlay.setEnabled(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    System.exit(0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,11 +223,17 @@ Scanner input = new Scanner (System.in);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnPlay;
+    private javax.swing.JComboBox<String> cmbPlayer1;
+    private javax.swing.JComboBox<String> cmbPlayer2;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField p1;
-    private javax.swing.JPasswordField p2;
+    private javax.swing.JLabel lblLives1;
+    private javax.swing.JLabel lblLives2;
+    private javax.swing.JLabel lblPlayer1;
+    private javax.swing.JLabel lblPlayer2;
+    private javax.swing.JLabel lblResult;
+    private javax.swing.JLabel lblTitle;
     // End of variables declaration//GEN-END:variables
 }
