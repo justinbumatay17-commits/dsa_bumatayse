@@ -34,15 +34,6 @@ public class menugui extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        subtot = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        txtchange = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        txtcash = new javax.swing.JTextField();
-        txtChange = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -54,6 +45,15 @@ public class menugui extends javax.swing.JFrame {
         snackquan = new javax.swing.JTextField();
         drinkz = new javax.swing.JTextField();
         order2 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        subtot = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        txtchange = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        txtcash = new javax.swing.JTextField();
+        txtChange = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -80,34 +80,6 @@ public class menugui extends javax.swing.JFrame {
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 544, 170));
-
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel5.setText("Payment");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -10, 110, 50));
-        jPanel3.add(subtot, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 70, -1));
-
-        jLabel6.setText("Sub Total:");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
-
-        jLabel7.setText("Payment:");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
-        jPanel3.add(txtchange, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 70, -1));
-
-        jLabel8.setText("Change:");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
-        jPanel3.add(txtcash, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 70, -1));
-
-        txtChange.setText("compute change");
-        txtChange.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtChangeActionPerformed(evt);
-            }
-        });
-        jPanel3.add(txtChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, -1, -1));
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 530, 210));
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -147,11 +119,39 @@ public class menugui extends javax.swing.JFrame {
                 order2ActionPerformed(evt);
             }
         });
-        jPanel4.add(order2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, -1, -1));
+        jPanel4.add(order2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 120, -1));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 550, 190));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 580, 200));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 470));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel5.setText("Payment");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -10, 110, 50));
+        jPanel3.add(subtot, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 70, -1));
+
+        jLabel6.setText("Sub Total:");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
+
+        jLabel7.setText("Payment:");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+        jPanel3.add(txtchange, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 70, -1));
+
+        jLabel8.setText("Change:");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+        jPanel3.add(txtcash, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 70, -1));
+
+        txtChange.setText("compute change");
+        txtChange.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtChangeActionPerformed(evt);
+            }
+        });
+        jPanel3.add(txtChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, -1, -1));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 570, 240));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 570));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
