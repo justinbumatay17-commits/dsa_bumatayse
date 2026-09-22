@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.delacruz_program;
+package com.mycompany.Bumataysse_program;
 
 /**
  *
@@ -75,7 +75,7 @@ public class RPS_Form extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 153, 51));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setBackground(java.awt.SystemColor.control);
@@ -96,6 +96,7 @@ public class RPS_Form extends javax.swing.JFrame {
         jLabel1.setName("CALCULATOR"); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
+        jButton7.setBackground(new java.awt.Color(204, 204, 204));
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton7.setText("+");
         jButton7.setActionCommand("");
@@ -107,6 +108,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 520, 60, 50));
 
+        jButton38.setBackground(new java.awt.Color(204, 204, 204));
         jButton38.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton38.setText("÷");
         jButton38.setActionCommand("");
@@ -118,6 +120,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 60, 50));
 
+        jButton39.setBackground(new java.awt.Color(102, 102, 102));
         jButton39.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton39.setText("⌫");
         jButton39.setActionCommand("");
@@ -129,6 +132,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 60, 50));
 
+        jButton40.setBackground(new java.awt.Color(102, 102, 102));
         jButton40.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton40.setText("mod");
         jButton40.setActionCommand("");
@@ -140,6 +144,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 60, 50));
 
+        jButton41.setBackground(new java.awt.Color(204, 204, 204));
         jButton41.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton41.setText("x");
         jButton41.setActionCommand("");
@@ -151,6 +156,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 60, 50));
 
+        jButton42.setBackground(new java.awt.Color(204, 204, 204));
         jButton42.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton42.setText("-");
         jButton42.setActionCommand("");
@@ -162,6 +168,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, 60, 50));
 
+        jButton43.setBackground(new java.awt.Color(204, 204, 204));
         jButton43.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton43.setText("1");
         jButton43.setActionCommand("");
@@ -173,6 +180,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 520, 60, 50));
 
+        jButton44.setBackground(new java.awt.Color(153, 153, 153));
         jButton44.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton44.setText("n!");
         jButton44.setActionCommand("");
@@ -184,6 +192,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, 60, 50));
 
+        jButton45.setBackground(new java.awt.Color(102, 102, 102));
         jButton45.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton45.setText("C");
         jButton45.setActionCommand("");
@@ -195,6 +204,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 60, 50));
 
+        jButton46.setBackground(new java.awt.Color(102, 102, 102));
         jButton46.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton46.setText("exp");
         jButton46.setActionCommand("");
@@ -206,6 +216,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 60, 50));
 
+        jButton47.setBackground(new java.awt.Color(204, 204, 204));
         jButton47.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton47.setText("9");
         jButton47.setActionCommand("");
@@ -217,6 +228,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, 60, 50));
 
+        jButton48.setBackground(new java.awt.Color(204, 204, 204));
         jButton48.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton48.setText("4");
         jButton48.setActionCommand("");
@@ -228,6 +240,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton48, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 460, 60, 50));
 
+        jButton49.setBackground(new java.awt.Color(204, 204, 204));
         jButton49.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton49.setText("2");
         jButton49.setActionCommand("");
@@ -239,6 +252,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton49, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 520, 60, 50));
 
+        jButton50.setBackground(new java.awt.Color(153, 153, 153));
         jButton50.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton50.setText(")");
         jButton50.setActionCommand("");
@@ -250,6 +264,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 60, 50));
 
+        jButton51.setBackground(new java.awt.Color(102, 102, 102));
         jButton51.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton51.setText("e");
         jButton51.setActionCommand("");
@@ -261,6 +276,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton51, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 60, 50));
 
+        jButton52.setBackground(new java.awt.Color(102, 102, 102));
         jButton52.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton52.setText("|x|");
         jButton52.setActionCommand("");
@@ -272,6 +288,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton52, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 60, 50));
 
+        jButton53.setBackground(new java.awt.Color(204, 204, 204));
         jButton53.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton53.setText("8");
         jButton53.setActionCommand("");
@@ -283,6 +300,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton53, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, 60, 50));
 
+        jButton54.setBackground(new java.awt.Color(204, 204, 204));
         jButton54.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton54.setText("5");
         jButton54.setActionCommand("");
@@ -294,6 +312,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton54, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, 60, 50));
 
+        jButton55.setBackground(new java.awt.Color(204, 204, 204));
         jButton55.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton55.setText("3");
         jButton55.setActionCommand("");
@@ -305,6 +324,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton55, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 520, 60, 50));
 
+        jButton56.setBackground(new java.awt.Color(153, 153, 153));
         jButton56.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton56.setText("(");
         jButton56.setActionCommand("");
@@ -316,6 +336,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton56, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, 60, 50));
 
+        jButton57.setBackground(new java.awt.Color(102, 102, 102));
         jButton57.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton57.setText("π");
         jButton57.setActionCommand("");
@@ -327,6 +348,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton57, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 60, 50));
 
+        jButton58.setBackground(new java.awt.Color(102, 102, 102));
         jButton58.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton58.setText("1/x");
         jButton58.setActionCommand("");
@@ -338,6 +360,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton58, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 60, 50));
 
+        jButton59.setBackground(new java.awt.Color(204, 204, 204));
         jButton59.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton59.setText("7");
         jButton59.setActionCommand("");
@@ -349,6 +372,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton59, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, 60, 50));
 
+        jButton60.setBackground(new java.awt.Color(204, 204, 204));
         jButton60.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton60.setText("6");
         jButton60.setActionCommand("");
@@ -360,6 +384,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton60, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 460, 60, 50));
 
+        jButton61.setBackground(new java.awt.Color(102, 102, 102));
         jButton61.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton61.setText("log");
         jButton61.setActionCommand("");
@@ -371,6 +396,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton61, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, 60, 50));
 
+        jButton62.setBackground(new java.awt.Color(102, 102, 102));
         jButton62.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton62.setText("2√x");
         jButton62.setActionCommand("");
@@ -382,6 +408,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton62, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 60, 50));
 
+        jButton63.setBackground(new java.awt.Color(102, 102, 102));
         jButton63.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton63.setText("2nd");
         jButton63.setActionCommand("");
@@ -393,6 +420,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton63, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 60, 50));
 
+        jButton64.setBackground(new java.awt.Color(102, 102, 102));
         jButton64.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton64.setText("x²");
         jButton64.setActionCommand("");
@@ -404,6 +432,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton64, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 60, 50));
 
+        jButton65.setBackground(new java.awt.Color(102, 102, 102));
         jButton65.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton65.setText("x^y");
         jButton65.setActionCommand("");
@@ -415,6 +444,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton65, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 60, 50));
 
+        jButton66.setBackground(new java.awt.Color(102, 102, 102));
         jButton66.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton66.setText("10^x");
         jButton66.setActionCommand("");
@@ -426,7 +456,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton66, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 60, 50));
 
-        jButton8.setBackground(new java.awt.Color(0, 102, 255));
+        jButton8.setBackground(new java.awt.Color(153, 153, 255));
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("=");
@@ -439,6 +469,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 580, 60, 50));
 
+        jButton67.setBackground(new java.awt.Color(153, 153, 153));
         jButton67.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton67.setText(".");
         jButton67.setActionCommand("");
@@ -450,6 +481,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton67, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 580, 60, 50));
 
+        jButton68.setBackground(new java.awt.Color(204, 204, 204));
         jButton68.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton68.setText("0");
         jButton68.setActionCommand("");
@@ -461,6 +493,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton68, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 580, 60, 50));
 
+        jButton69.setBackground(new java.awt.Color(153, 153, 153));
         jButton69.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton69.setText("+/-");
         jButton69.setActionCommand("");
@@ -472,6 +505,7 @@ public class RPS_Form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton69, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 580, 60, 50));
 
+        jButton70.setBackground(new java.awt.Color(102, 102, 102));
         jButton70.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton70.setText("In");
         jButton70.setActionCommand("");

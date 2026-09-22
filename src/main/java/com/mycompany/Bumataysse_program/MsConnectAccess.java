@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.delacruz_program;
+package com.mycompany.Bumataysse_program;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 public class MsConnectAccess {
     public static Connection conn() {
         try {
-            String url = "jdbc:ucanaccess://”C://Users//CL2-PC//Documents/delacruz_Database.accdb” ";
+            String url = "jdbc:ucanaccess://”C://Users//CL2-PC//Documents/Bumatay_Database.accdb” ";
             Connection conn = DriverManager.getConnection(url);
             return conn;
         } catch (SQLException e) {

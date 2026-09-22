@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.delacruz_program;
+package com.mycompany.Bumataysse_program;
 
 import java.util.Scanner;
 
@@ -41,49 +41,52 @@ public class RPS_gui extends javax.swing.JFrame {
         lblResult = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 153, 51));
+        jPanel1.setBackground(new java.awt.Color(204, 0, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblPlayer2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblPlayer2.setText("PLAYER 2");
-        jPanel1.add(lblPlayer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 90, 20));
+        jPanel1.add(lblPlayer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 90, 20));
 
-        lblPlayer1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblPlayer1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblPlayer1.setText("PLAYER 1");
-        jPanel1.add(lblPlayer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 80, 20));
+        jPanel1.add(lblPlayer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 80, 20));
 
         cmbPlayer1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Rock", "Paper", "Scissors" }));
-        jPanel1.add(cmbPlayer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, -1, -1));
+        jPanel1.add(cmbPlayer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 130, 30));
 
         cmbPlayer2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Rock", "Paper", "Scissors" }));
-        jPanel1.add(cmbPlayer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, -1, -1));
+        jPanel1.add(cmbPlayer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 260, 130, 30));
 
         lblTitle.setBackground(new java.awt.Color(255, 51, 0));
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblTitle.setText("ROCK PAPER SCISSORS GAME!!!");
-        jPanel1.add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        lblTitle.setText("ROCK PAPER SCISSORS ");
+        jPanel1.add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 410, 40));
 
         lblLives1.setText("Lives : 5");
-        jPanel1.add(lblLives1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
+        jPanel1.add(lblLives1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
 
         lblLives2.setText("Lives : 5");
-        jPanel1.add(lblLives2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, -1, -1));
+        jPanel1.add(lblLives2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 210, 60, 20));
 
+        btnPlay.setBackground(new java.awt.Color(255, 255, 51));
         btnPlay.setText("PLAY ROUND");
         btnPlay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPlayActionPerformed(evt);
             }
         });
-        jPanel1.add(btnPlay, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 140, 40));
+        jPanel1.add(btnPlay, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 350, 140, 40));
 
-        lblResult.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblResult.setText("Choose your moves!");
-        jPanel1.add(lblResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, -1, -1));
+        lblResult.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblResult.setText("Option!");
+        jPanel1.add(lblResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, -1, -1));
 
         jButton1.setText("NEW GAME");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -91,7 +94,7 @@ public class RPS_gui extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, 30));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 200, -1, 30));
 
         jButton2.setText("EXIT");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -99,9 +102,15 @@ public class RPS_gui extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 80, 30));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 490, 80, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 550, 320));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, 490));
+
+        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 40, -1, 490));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 820, 580));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -229,6 +238,8 @@ btnPlay.setEnabled(true);        // TODO add your handling code here:
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblLives1;
     private javax.swing.JLabel lblLives2;
     private javax.swing.JLabel lblPlayer1;

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.delacruz_program;
+package com.mycompany.Bumataysse_program;
 
 /**
  *
@@ -34,6 +34,9 @@ public class menugui extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel8 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -45,113 +48,146 @@ public class menugui extends javax.swing.JFrame {
         snackquan = new javax.swing.JTextField();
         drinkz = new javax.swing.JTextField();
         order2 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         subtot = new javax.swing.JTextField();
+        txtcash = new javax.swing.JTextField();
+        txtchange = new javax.swing.JTextField();
+        txtChange = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        txtchange = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        txtcash = new javax.swing.JTextField();
-        txtChange = new javax.swing.JButton();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(java.awt.Color.lightGray);
+        jPanel2.setBackground(new java.awt.Color(0, 255, 204));
+        jPanel2.setForeground(new java.awt.Color(0, 204, 204));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 36)); // NOI18N
         jLabel1.setText("Menu");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 110, 70));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 110, 70));
 
-        jLabel2.setText("(2) Hotdog - 20");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setText("(2) Clover - 20");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, -1, -1));
 
-        jLabel3.setText("(2) Royal - 25");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, -1, -1));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setText("(2) Gulaman - 25");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, -1, -1));
 
-        jLabel4.setText("(1) Burger - 25");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setText("(1) Chippy - 25");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, -1, -1));
 
-        jLabel14.setText("(1) Coke - 25");
-        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, -1, -1));
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel14.setText("(1) Buko - 25");
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 110, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 544, 170));
+        jPanel3.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, 10, 200));
 
+        jPanel5.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, -1, 190));
+
+        jPanel8.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 120, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 760, 240));
+
+        jPanel4.setBackground(new java.awt.Color(0, 204, 204));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
         jLabel9.setText("Order");
-        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, -10, 110, 50));
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 110, 50));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel10.setText("Quantity:");
-        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel11.setText("Drinks:");
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel12.setText("Snacks:");
-        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
+        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel13.setText("Quantity:");
-        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
-        jPanel4.add(drinkquan, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 250, -1));
+        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, -1));
+        jPanel4.add(drinkquan, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 80, -1));
 
         snackz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 snackzActionPerformed(evt);
             }
         });
-        jPanel4.add(snackz, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 250, -1));
-        jPanel4.add(snackquan, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 250, -1));
-        jPanel4.add(drinkz, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 250, -1));
+        jPanel4.add(snackz, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 80, -1));
+        jPanel4.add(snackquan, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 80, -1));
+        jPanel4.add(drinkz, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 80, -1));
 
+        order2.setBackground(new java.awt.Color(255, 255, 0));
+        order2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         order2.setText("Place Order");
         order2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 order2ActionPerformed(evt);
             }
         });
-        jPanel4.add(order2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 120, -1));
+        jPanel4.add(order2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 120, -1));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 580, 200));
-
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
         jLabel5.setText("Payment");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -10, 110, 50));
-        jPanel3.add(subtot, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 70, -1));
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 110, 50));
+        jPanel4.add(subtot, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, 70, -1));
+        jPanel4.add(txtcash, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 70, -1));
+        jPanel4.add(txtchange, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 130, 70, -1));
 
-        jLabel6.setText("Sub Total:");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
-
-        jLabel7.setText("Payment:");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
-        jPanel3.add(txtchange, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 70, -1));
-
-        jLabel8.setText("Change:");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
-        jPanel3.add(txtcash, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 70, -1));
-
+        txtChange.setBackground(new java.awt.Color(255, 255, 0));
+        txtChange.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtChange.setText("compute change");
         txtChange.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtChangeActionPerformed(evt);
             }
         });
-        jPanel3.add(txtChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, -1, -1));
+        jPanel4.add(txtChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, -1, -1));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 570, 240));
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel6.setText("Sub Total:");
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 570));
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel7.setText("Payment:");
+        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel8.setText("Change:");
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 130, -1, -1));
+
+        jPanel6.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel4.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 20, -1, 200));
+
+        jPanel7.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel4.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, 200));
+
+        jPanel9.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel4.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 140, 10));
+
+        jPanel10.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel4.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 140, 10));
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 750, 260));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 750, 570));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -255,9 +291,15 @@ subtot.setText(String.valueOf(subtotal));
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JButton order2;
     private javax.swing.JTextField snackquan;
     private javax.swing.JTextField snackz;

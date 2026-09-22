@@ -22,4 +22,5 @@
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>com.mycompany.delacruz_program.Delacruz_program</exec.mainClass>
     </properties>
+    <name>Bumataysse_program</name>
 </project>
