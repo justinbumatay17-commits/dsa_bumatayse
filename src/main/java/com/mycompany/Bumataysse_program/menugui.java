@@ -60,6 +60,7 @@ public class menugui extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
+        Btnclear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -185,6 +186,15 @@ public class menugui extends javax.swing.JFrame {
         jPanel10.setBackground(new java.awt.Color(51, 51, 51));
         jPanel4.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 140, 10));
 
+        Btnclear.setBackground(new java.awt.Color(255, 0, 51));
+        Btnclear.setText("Clear");
+        Btnclear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnclearActionPerformed(evt);
+            }
+        });
+        jPanel4.add(Btnclear, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 220, -1, -1));
+
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 750, 260));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 750, 570));
@@ -237,6 +247,20 @@ subtot.setText(String.valueOf(subtotal));
         // TODO add your handling code here:
     }//GEN-LAST:event_snackzActionPerformed
 
+    private void BtnclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnclearActionPerformed
+        drinkquan.setText("");
+        drinkz.setText("");
+        snackquan.setText("");
+        snackz.setText("");
+        subtot.setText("");
+        txtcash.setText("");
+        txtchange.setText("");
+        
+        
+        
+        
+    }//GEN-LAST:event_BtnclearActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -273,6 +297,7 @@ subtot.setText(String.valueOf(subtotal));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Btnclear;
     private javax.swing.JTextField drinkquan;
     private javax.swing.JTextField drinkz;
     private javax.swing.JColorChooser jColorChooser1;
