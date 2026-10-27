@@ -15,16 +15,20 @@ import javax.swing.JOptionPane;
  *
  * @author CL2-PC
  */
+
 public class MsConnectAccess {
+
     public static Connection conn() {
         try {
-            String url = "jdbc:ucanaccess://”C://Users//CL2-PC//Documents/Bumatay_Database.accdb” ";
-            Connection conn = DriverManager.getConnection(url);
-            return conn;
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, e);
-        }
-        return null;
+            String url = "jdbc:ucanaccess://C:/Users/Windows10 Pro/Documents/Bumatayss1.accdb";
+            return DriverManager.getConnection(url);
 
-}
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(
+                null,
+                "Database connection failed:\n" + e.getMessage()
+            );
+            return null;
+        }
+    }
 }
